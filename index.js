@@ -1,34 +1,44 @@
-// const gifts = ["teddy bear", "drone", "doll"];
-
-// function wrapGifts(gifts) {
-//   for (let i = 0; i < gifts.length; i++) {
-//     console.log(`Wrapped ${gifts[i]} and added a bow!`);
-//     debugger;
-//   }
-
-//   return gifts;
+// const messages = [];
+// function writeCards(name, surprise){
+// for (let i=0; i < name.length; i++){
+//     messages.push (`Thank you, ${name[i]}, for the wonderful ${surprise} gift!`);
+//     }
+//     return messages;
 // }
 
-// wrapGifts(gifts);
 
 
-// const people = ["Guadalupe", "Ollie", "Aki"];
-const messages = [];
-function writeCards(name, surprise){
-for (let i=0; i < name.length; i++){
-    messages.push (`Thank you, ${name[i]}, for the wonderful ${surprise} gift!`);
+
+// function countDown (c){
+// while (c >= 0) {
+//     console.log(c);
+//     c--;
+//  }
+// } 
+
+// countDown(10);
+
+
+
+
+
+
+
+
+
+
+
+
+function writeCards(array, event){
+    let newArray = [];
+    for (let i = 0; i < array.length; i++){
+        newArray.push(`Thank you, ${array[i]}, for the wonderful ${event} gift!`)
     }
-    return messages;
+    return newArray;
 }
 
-
-
-
-function countDown (c){
-while (c >= 0) {
-    console.log(c);
-    c--;
- }
-} 
-
-countDown(10);
+function countDown(number){
+    for (let i = number; i >= 0; i--){
+        console.log(i);
+    }
+}
